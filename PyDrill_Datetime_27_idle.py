@@ -15,11 +15,11 @@ from datetime import datetime
 moment = int(datetime.now().hour)
 
 def Branches(moment):
-    if (moment + 3) < 9 or (moment + 3) > 21:
+    if (moment + 3) < 9 or (moment + 3) >= 21:
         print('New York Branch Closed')
     elif (moment + 3) > 9 or (moment + 3) < 21:
         print('New York Branch Open')
-    if (moment + 8) < 9 or (moment + 8) > 21:
+    if (moment + 8) < 9 or (moment + 8) >= 21:
         print('London Branch Closed')
     elif (moment + 8) > 9 or (moment + 8) < 21:
         print('London Branch Open')
