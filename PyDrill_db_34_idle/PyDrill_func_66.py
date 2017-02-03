@@ -69,6 +69,7 @@ def findFile1(self):
     filenamea = askdirectory()
     filenamea = re.sub('/', r'\\', filenamea)
     print(filenamea)
+    self.txt_src.insert(END, filenamea)
     return filenamea
 
 
@@ -77,6 +78,7 @@ def findFile2(self):
     filenameb = askdirectory()
     filenameb = re.sub('/', r'\\', filenameb)
     print(filenameb)
+    self.txt_dest.insert(END, filenameb)
     return filenameb
     
 

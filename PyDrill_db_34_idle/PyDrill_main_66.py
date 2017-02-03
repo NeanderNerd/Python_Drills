@@ -20,9 +20,9 @@ class ParentWindow(Frame):
         Frame.__init__(self, master, *args, **kwargs)
 
         self.master = master
-        self.master.minsize(220, 265)
-        self.master.maxsize(220, 265)
-        PyDrill_func_66.center_window(self, 220, 265)
+        self.master.minsize(215, 325)
+        self.master.maxsize(215, 325)
+        PyDrill_func_66.center_window(self, 215, 325)
         self.master.title('File Transfer')
         self.master.configure(bg = '#00AABD')
         self.master.protocol('WM_DELETE_WINDOW', lambda: PyDrill_func_66.ask_quit(self))
